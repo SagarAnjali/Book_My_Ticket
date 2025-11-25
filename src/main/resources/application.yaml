@@ -17,3 +17,7 @@ spring:
   data:
     radis:
       url: radis://localhost:6379
+      
+admin:
+  email: admin@gmail.com
+  password: admin1234
