@@ -11,13 +11,23 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
-    properties: 
+    properties:
       hibernate:
         format_sql: true
   data:
-    radis:
-      url: radis://localhost:6379
-      
+    redis:
+      url: redis://localhost:6379
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: msagaranjali@gmail.com
+    password: ${APP_PASSWORD}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
 admin:
   email: admin@gmail.com
   password: admin1234
